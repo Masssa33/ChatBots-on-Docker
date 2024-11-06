@@ -43,10 +43,12 @@
 
 ### Dockerを使用しての起動
   1. Dockerイメージをビルドします。
+
   ```bash
   docker compose up
   ```
   2. Dockerコンテナを起動します。
+
   ```bash
   docker run -p 3000:3000 chatbots-app
   ```
