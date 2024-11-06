@@ -44,7 +44,7 @@
 ### Dockerを使用しての起動
   1. Dockerイメージをビルドします。
   ```bash
-  docker build -t chatbots-app .
+  docker compose up
   ```
   2. Dockerコンテナを起動します。
   ```bash
