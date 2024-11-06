@@ -1,0 +1,41 @@
+/* ヘッダーのスタイル */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  /* ヘッダーの高さ */
+  background-color: #34b7f1;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  /* 手前に表示 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* 手前に浮き出る影 */
+}
+
+.header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* コンテンツエリアのスタイル */
+.content {
+  padding-top: 60px;
+  /* ヘッダーの高さ分余白を追加 */
+  height: calc(100vh - 60px);
+  /* ヘッダーの高さを差し引いた高さを指定 */
+  overflow-y: auto;
+  /* 縦方向のスクロールを許可 */
+}
